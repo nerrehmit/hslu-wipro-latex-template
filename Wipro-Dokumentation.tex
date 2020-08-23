@@ -1,0 +1,100 @@
+%-----------------------------
+% Master LaTeX Dokument
+%-----------------------------
+
+%-----------------------------
+% Konfiguration des Dokuments
+%-----------------------------
+
+\documentclass[a4paper,11pt]{scrreprt}
+
+%-----------------------------
+% Installierte Pakete
+%-----------------------------
+
+\usepackage[ngerman]{babel}				% Rechtsschreibekorrektur Deutsch https://ctan.org/pkg/babel
+
+\usepackage[utf8]{inputenc}				% Unicode Support https://ctan.org/pkg/inputenc
+
+\usepackage[a-2b,latxmp]{pdfx}			% PDFA Support https://ctan.org/pkg/pdfx
+
+\usepackage{graphicx}					% Einfügen von Bildern https://ctan.org/pkg/graphicx?lang=en
+
+\usepackage{tabularx}					% Erweiterte Optionen für Tabellen https://ctan.org/pkg/tabularx
+
+\usepackage{enumitem}					% Aufzählungen https://ctan.org/pkg/enumitem
+
+\usepackage{caption}					% Erweiterte Optionen für Captions https://ctan.org/pkg/caption
+
+\usepackage{pdfpages}					% PDF Dokumente einbetten https://ctan.org/pkg/pdfpages
+
+\usepackage{fancyhdr}					% Für custom Kopf- und Fusszeilen
+\pagestyle{fancy}
+
+\usepackage[acronym]{glossaries}		% Für die Erstellung eines Glossars, wir rufen glossaries ohne [toc] auf weil sonst das Abkürzungsverzeichnis im Inhaltsverzeichnis erscheint und die HSLU das nicht möchte.
+\loadglsentries{Glossar.tex}			% Das ausgelagerte Glossar wird aus der Datei "Glossar.tex" geladen.
+
+\makeglossaries
+
+\usepackage{amssymb}
+
+\usepackage[T1]{fontenc}				% Fontencoding https://www.ctan.org/pkg/fontenc
+
+\usepackage[onehalfspacing]{setspace}	% 1.5-facher Zeilenabstand wie von der HSLU gewünscht
+
+\usepackage[style=apa]{biblatex}		% Zitierung nach APA Standard
+\addbibresource{Referenzen.bib}
+
+\usepackage{hyperref}					% Formatieren von Links
+
+%-----------------------------
+% Inhalt des Dokuments
+%-----------------------------
+
+\begin{document}
+	
+\fancyfoot[OR]{\thepage}
+
+\input{content/HSLU-Deckblatt.tex}
+
+\pagenumbering{roman}
+
+\begin{abstract}
+	Hier steht ein Beispielabstract um es im PDF anschaulich zu zeigen.
+	% TODO: Hier den Abstract schreiben
+\end{abstract}
+
+\tableofcontents
+
+\printglossary[type=\acronymtype, title=Abkürzungsverzeichnis]
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\input{content/Einleitung.tex}
+
+\input{content/Stand_der_Technik}
+
+\input{content/Ideen_und_Konzepte}
+
+\input{content/Methoden}
+
+\input{content/Realisierung}
+
+\input{content/Evaluation_und_Validation}
+
+\input{content/Ausblick}
+
+\appendix
+
+\addcontentsline{toc}{chapter}{Glossar} 		% Macht das "Glossar" im Inhaltsverzeichnis erscheint.
+\printglossary[style=altlist,title=Glossar]
+
+\listoffigures
+
+\listoftables
+
+\printbibliography
+
+\end{document}
