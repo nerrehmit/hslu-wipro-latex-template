@@ -1,0 +1,6 @@
+image: ctornau/latex
+
+build:
+  stage: build
+  script:
+    - latexmk -pdf -cd -f Wipro-Dokumentation.tex 
