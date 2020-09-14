@@ -10,6 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Wipro-Dokumentation.tex
+          args: -biber
       - name: Upload artifacts
         uses: actions/upload-artifact@master
         with:
