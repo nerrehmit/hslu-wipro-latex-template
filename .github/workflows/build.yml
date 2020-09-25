@@ -7,10 +7,10 @@ jobs:
       - name: Clone Git repository
         uses: actions/checkout@v2
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: dante-ev/latex-action@master
         with:
           root_file: Wipro-Dokumentation.tex
-          args: -pdf -cd -f 
+          args: -bibtex -pdf
       - name: Upload artifacts
         uses: actions/upload-artifact@master
         with:
