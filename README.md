@@ -21,6 +21,15 @@ Benutz für deine Änderungen doch einen Fork damit deine Mitstudierenden ebenfa
 
 Die MIT Lizenz erlaubt es dir den Sourcecode (das Template) zu benützen und die daraus resultierende Arbeit nicht zu veröffentlichen. Das ist explizit so gewählt das auch Arbeiten umgesetzt werden können die ggf. vom Wirtschaftspartner nicht zur Publikation inkl. Sourcecode freigegeben sind.
 
+## PDF bauen lassen
+
+### Gitlab
+Du findest im Ordner `automation` ein `.gitlab-ci.yml`. Wenn du das ins Hauptverzeichnis von deinem Projekt verschiebst wird im HSLU Gitlab automatisch bei jedem Push von einem Gitlab Runner das PDF gebaut und als Artefakt zum Download bereitgestellt.
+
+### Github
+Hast du dein Projekt auf Github wird automatisch bei einem Push oder einem Mergerequest ein PDF durch eine Github Action gebaut und ebenfalls als Artefakt zum Download bereitgestellt.
+Danke an @florianbaer für dieses Feature!
+
 ## Offene Punkte/ ToDo's
 
 - Die Kopf- und Fusszeilen entsprechen noch nicht den Anforderungen der HSLU.

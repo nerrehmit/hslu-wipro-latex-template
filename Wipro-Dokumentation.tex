@@ -40,7 +40,7 @@
 
 \usepackage[T1]{fontenc}				% Fontencoding https://www.ctan.org/pkg/fontenc
 
-\usepackage[style=apa]{biblatex}		% Zitierung nach APA Standard
+\usepackage[backend=biber,style=apa]{biblatex}		% Zitierung nach APA Standard
 \addbibresource{Referenzen.bib}
 
 \usepackage{hyperref}					% Formatieren von Links
@@ -64,6 +64,9 @@ Zudem wird auf den Glossareintrag zu Wipro verwiesen. \gls{wipro}
 Tastaturen werden typischerweise über \gls{usb} angeschlossen. Nicht aber an der \gls{hslu}
 
 Ah doch, jetzt sehe ich das sie an der \gls{hslu} auch \gls{usb} verwenden.
+
+Lorem ipsum dolor sit amet~\cite{einstein}.
+    At vero eos et accusam et justo duo dolores et ea rebum~\cite{einstein}.
 
 % TODO: Hier den Beispieltext löschen und eigenen Abstract schreiben
 \end{abstract}

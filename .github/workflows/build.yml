@@ -1,0 +1,18 @@
+name: Build PDF File
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@master
+        with:
+          root_file: Wipro-Dokumentation.tex
+          args: -bibtex -pdf
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: Wipro-Dokumentation.pdf
+          path: Wipro-Dokumentation.pdf
