@@ -24,7 +24,6 @@ Die MIT Lizenz erlaubt es dir den Sourcecode (das Template) zu benützen und die
 ## Offene Punkte/ ToDo's
 
 - Die Kopf- und Fusszeilen entsprechen noch nicht den Anforderungen der HSLU.
-- Die 1.5-fachen Zeilenabstände verlängern die HSLU-Präambel auf über eine Seite. Anfrage dazu beim Sekretariat ist noch ausstehend.
 - Bilder/ Abbildungsverzeichnis hat noch kein Example
 - Tabellen-(Verzeichnis) hat noch kein Example
 - Literaturverzeichnis hat noch kein Example
