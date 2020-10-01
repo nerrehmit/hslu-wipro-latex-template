@@ -19,7 +19,7 @@ Pull Requests, Issues, Vorschläge etc. sind immer gerne gesehen.
 Du kannst die Vorlage so nutzen oder auch nach deinen Bedürfnissen abändern.
 Benutz für deine Änderungen doch einen Fork damit deine Mitstudierenden ebenfalls davon profitieren können.
 
-Die MIT Lizenz erlaubt es dir den Sourcecode (das Template) zu benützen und die daraus resultierende Arbeit nicht zu veröffentlichen. Das ist explizit so gewählt das auch Arbeiten umgesetzt werden können die ggf. vom Wirtschaftspartner nicht zur Publikation inkl. Sourcecode freigegeben sind.
+Die MIT Lizenz erlaubt es dir den Sourcecode (das Template) zu benutzen und die daraus resultierende Arbeit nicht zu veröffentlichen. Das ist explizit so gewählt das auch Arbeiten umgesetzt werden können die ggf. vom Wirtschaftspartner nicht zur Publikation inkl. Sourcecode freigegeben sind.
 
 ## PDF bauen lassen
 
