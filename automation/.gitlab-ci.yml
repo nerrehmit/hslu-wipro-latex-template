@@ -1,0 +1,9 @@
+image: ctornau/latex
+
+build:
+  stage: build
+  artifacts:
+    paths:
+      - Wipro-Dokumentation.pdf
+  script:
+    - latexmk -pdf -cd -f Wipro-Dokumentation.tex 
